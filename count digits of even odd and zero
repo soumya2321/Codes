@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,num,even_count=0,odd_count=0,zero_count=0;
+    scanf("%d",&n);
+    while(n!=0){
+    num=n%10;
+    if(num==0)
+    zero_count++;
+    else if(num%2!=0)
+    odd_count++;
+    else  
+    even_count++;
+    n/=10;
+    }
+    printf("even count %d\n",even_count);
+    printf("odd count%d\n",odd_count);
+    printf("zero count%d\n",zero_count);
+    return 0;
+}
