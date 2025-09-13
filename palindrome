@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int  n,num,rev=0;
+    scanf("%d",&n);
+    int temp=num;
+    while(n!=0)
+    {
+        num=n%10;
+        rev=rev*10+num;
+        n/=10;
+    }
+    if(num<0)
+    {
+        printf("negative number");
+    }
+    else if(temp=rev)
+    {
+        printf("it is palindrome");
+    }
+    else
+    printf("not palindrome");
+}
