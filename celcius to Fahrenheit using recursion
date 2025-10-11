@@ -1,0 +1,10 @@
+#include<stdio.h>
+float temp(float celcius)
+{
+    return (celcius*1.8)+32;
+}
+int main()
+{
+    printf("%f",temp(40));
+    return 0;
+}
