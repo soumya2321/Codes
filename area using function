@@ -1,0 +1,20 @@
+ #include<stdio.h>
+ int rectangle(int length,int breadth)
+ {
+     return length*breadth;
+ }
+ int square( int side)
+ {
+     return side*side;
+ }
+float circle(float radius)
+{
+    return 3.14*radius*radius;
+}
+ int main()
+ {
+     printf("area of square=%d\n",square(40));
+     printf("area of rectangle = %d\n",rectangle(40,50));
+     printf("area of circle=%f\n",circle(4));
+     return 0;
+ }
